@@ -94,17 +94,17 @@ export default function Dashboard() {
         <div className='dashboard-holder'>
             <div className='dashboard-tabs'>
                 <div className='d-flex  align-items-center'>
-                    <div onClick={() => onTabChange('data')} className={active === 'data' ? 'active tabs' : 'tabs'}>Data</div>
+                    <div onClick={() => onTabChange('data')} className={active === 'data' ? 'active tabs' : 'tabs'}><img src={active === 'data' ? '/images/settings-white.png' : '/images/settings.png'} alt='' /> &nbsp;Data</div>
                     <div onClick={() => onTabChange('summary')} className={active === 'summary' ? 'active tabs' : 'tabs'}>Summary</div>
                     <div onClick={() => onTabChange('logs')} className={active === 'logs' ? 'active tabs' : 'tabs'}>Logs</div>
                 </div>
-                <button className='download-btn' onClick={downloadData}>Download</button>
+                <button className='download-btn' disabled={table_data?.length} onClick={downloadData}><img src='/images/download.png' alt='' /> &nbsp;&nbsp;Download</button>
 
             </div>
             <div className='dashboard-header'>
                 <div className='d-flex  align-items-center'>
-                    <div className='dashboard-box'>PROJECT NAME</div> &nbsp;<h4>{dashboardDetails?.project_name}</h4>&nbsp;&nbsp;
-                    <div className='dashboard-box'>OUTPUT DATASET NAME</div> &nbsp;<h4>{dashboardDetails?.output_name}</h4>&nbsp;&nbsp;
+                    <div className='dashboard-box'>PROJECT NAME</div> &nbsp;<h4>{dashboardDetails?.project_name}</h4>&nbsp;&nbsp;&nbsp;
+                    <div className='dashboard-box'>OUTPUT DATASET NAME</div> &nbsp;<h4>{dashboardDetails?.output_name}</h4>&nbsp;&nbsp;&nbsp;
                     <div className='dashboard-box'>LAST RUN</div> &nbsp;<h4>{dashboardDetails?.last_run?.split('T')[0]}</h4>
                 </div>
                 <div className='row_count'>

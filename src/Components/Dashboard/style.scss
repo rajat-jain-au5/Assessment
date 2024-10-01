@@ -13,6 +13,10 @@
             color: #2c0460;
             border: 1px solid #86759d;
             cursor: pointer;
+            img {
+                width: 15px;
+                height: 15px;
+            }
             &:nth-child(1) {
                 border-top-left-radius: 6px;
                 border-bottom-left-radius: 6px;
@@ -33,6 +37,8 @@
             text-align: center;
             border-radius: 6px;
             height: 40px;
+            border: none;
+            width: 120px;
         }
     }
     .dashboard-header {
@@ -56,6 +62,7 @@
             border-radius: 8px;
             font-size: 12px;
             text-align: center;
+            border: 1px solid #a086e3;
         }
         h4 {
             font-size: 12px;
