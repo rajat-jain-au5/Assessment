@@ -2,10 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Clone From github using command git clone <clone url from github repo>
-run command `npm install`
-if this is not working Use   `npm install --legacy-peer-deps`
-run command `npm start`
+Clone From github using command git clone <clone url from github repo> \
+run command `npm install` \
+if this is not working Use   `npm install --legacy-peer-deps` \
+run command `npm start` \
 
 
 ## Available Scripts
